@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ShoesStore.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="~/css/home.css" />
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Origine_User)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Parola)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Origine_User)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parola)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_User">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_User">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_User">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

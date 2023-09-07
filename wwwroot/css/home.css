@@ -1,0 +1,11 @@
+﻿namespace ShoesStore.wwwroot.css
+{
+    public class home
+{
+    background-image: url(../images/fundal.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+}
