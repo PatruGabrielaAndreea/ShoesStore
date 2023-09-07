@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:ShoesStoreContext"
+    },
+    "mssql2": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:ShoesStoreContext1Connection"
+    }
+  }
+}
